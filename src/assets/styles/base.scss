@@ -1,0 +1,26 @@
+* {
+  font-size: calc(1280 * 22 / 1728 * 1px);
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// 1379 22
+// 1280 x
+//22 1fr
