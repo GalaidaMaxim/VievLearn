@@ -1,5 +1,6 @@
 * {
   font-size: calc(1280 * 22 / 1728 * 1px);
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -13,6 +14,7 @@ ol,
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -24,3 +26,6 @@ img {
 // 1379 22
 // 1280 x
 //22 1fr
+body {
+  margin: 0;
+}
