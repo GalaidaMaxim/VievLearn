@@ -1,5 +1,11 @@
 * {
-  font-size: calc(1280 * 22 / 1728 * 1px);
+  font-size: 4px;
+  @media screen and (min-width: 768px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
   box-sizing: border-box;
 }
 h1,

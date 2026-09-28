@@ -1,8 +1,10 @@
 <script>
 import Container from "./Container.vue";
+import DotsBlock from "./DotsBlock.vue";
 export default {
   components: {
     Container,
+    DotsBlock,
   },
 };
 </script>
@@ -20,11 +22,16 @@ export default {
       </div>
       <div class="imageThumb">
         <img src="../assets/images/l1Small.png" alt="" />
+        <DotsBlock class="block1" :width="4" :height="4" />
+        <DotsBlock class="block2" :width="4" :height="4" />
       </div>
     </Container>
   </section>
 </template>
-<style scoped>
+
+<style scoped lang="scss">
+@use "../assets/styles/functions" as *;
+
 section {
   padding-top: 10.63rem;
   padding-bottom: 7.54rem;
@@ -74,5 +81,16 @@ button {
   border-bottom-right-radius: 6.4rem;
   border-top-right-radius: 2.2rem;
   border-bottom-left-radius: 2.2rem;
+  position: relative;
+  & .block1 {
+    position: absolute;
+    top: rem(524px);
+    left: rem(24px);
+  }
+  & .block2 {
+    position: absolute;
+    top: rem(155px);
+    right: rem(12px);
+  }
 }
 </style>
